@@ -147,8 +147,6 @@ def createdb(message):
         cur.execute("CREATE TABLE IF NOT EXISTS teachers (name TEXT, contacts TEXT, interests TEXT)")
         cur.execute("CREATE TABLE IF NOT EXISTS course_evaluation (name TEXT, teacher1 TEXT, teacher2 TEXT, teacher3 TEXT, teacher4 TEXT, year INTEGER, course INTEGER q1 INTEGER, q2 INTEGER, q3 INTEGER, q4 INTEGER, q5 INTEGER, q6 INTEGER, q7 INTEGER, q8 INTEGER, q9 INTEGER, q10 INTEGER, q11 TEXT, reviewerHASH INTEGER )")
         cur.execute("CREATE TABLE IF NOT EXISTS teacher_evaluation (name TEXT, year INTEGER, course INTEGER, q1 INTEGER, q2 INTEGER, q3 INTEGER, q4 INTEGER, q5 TEXT)")
-        cur.execute("CREATE TABLE IF NOT EXISTS did_course_evaluation (id INTEGER, name TEXT)")
-        cur.execute("CREATE TABLE IF NOT EXISTS did_teacher_evaluation (id INTEGER, name TEXT)")
     print("create")
 
 @bot.message_handler(commands=["stopbot"])
